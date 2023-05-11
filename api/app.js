@@ -48,6 +48,9 @@ app.options(`*`, (req, res) => {
   res.status(200).send()
 })
 
+app.get('/api/hello', (req, res) => {
+  res.status(200).json({greeting: 'Hello API!'})
+})
 app.post(`/users/register`, asyncHandler(users.register))
 
 app.post(`/users/login`, asyncHandler(users.login))
