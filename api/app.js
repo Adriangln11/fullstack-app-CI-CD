@@ -49,7 +49,7 @@ app.options(`*`, (req, res) => {
 })
 
 app.get('/api/hello', (req, res) => {
-  res.status(200).json({greeting: 'Hello API!'})
+  return res.status(200).json({greeting: 'Hello API!'})
 })
 app.post(`/users/register`, asyncHandler(users.register))
 
