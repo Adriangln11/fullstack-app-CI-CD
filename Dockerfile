@@ -1,8 +1,8 @@
 FROM node:16
-ENV NODE_ENV=production
-ENV PORT=80
+ENV PORT=3000
+
 WORKDIR /app
 COPY . .
 RUN npm install --silent
-EXPOSE 80
+EXPOSE $PORT
 CMD ["npm","start"]
