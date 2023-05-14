@@ -25,7 +25,7 @@
       - name: Build, Tag, and Push the Image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REGISTRY: t8j9w2v8
           ECR_REPOSITORY: my-public-repo
           IMAGE_TAG: latest
         run: |
