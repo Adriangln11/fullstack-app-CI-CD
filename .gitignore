@@ -24,3 +24,4 @@ env.js
 tmp
 yarn.lock
 test
+actions-runner
