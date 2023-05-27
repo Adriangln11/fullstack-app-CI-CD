@@ -8,13 +8,14 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm i
 
 # Copy the rest of the application code to the container
 COPY . .
+RUN npm run build
 
 # Expose port 3000
 EXPOSE 3000
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["npm","run", "start"]
